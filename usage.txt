@@ -1,0 +1,27 @@
+              ----- Project Useful Things ------
+
+# |Installing|
+1. npm init 
+2. npm i express typescript mongoose ejs ts-node
+3. npm i -D @types/express @types/node
+2. npx tsc --init 
+
+
+
+# |Other Useful Files|
+1. gitignore
+   env file
+2. README.md
+3. usage.txt
+4. SECURITY.md
+
+
+# |Respectively File|
+       1* server.ts
+       2* src folder 
+1. app.ts  -- ESJ bat
+2. config -- folder create
+   -config.ts
+   
+   ----setup----
+"start": "nodemon server.ts"
