@@ -2,7 +2,7 @@
 
 # |Installing|
 1. npm init 
-2. npm i express typescript mongoose ejs ts-node
+2. npm i express typescript mongoose ejs ts-node    dotenv
 3. npm i -D @types/express @types/node
 4. npm i -D nodemon
 5. npx tsc --init 
@@ -20,9 +20,17 @@
 # |Respectively File|
        1* server.ts
        2* src folder 
-1. app.ts  -- ESJ bat
+1. app.ts  -- ESJ (via)
 2. config -- folder create
    -config.ts
 
    ----setup----
 "start": "nodemon server.ts"
+
+# |Socket.io|
+   * npm i socket.io
+  // data receive garda - on 
+// data pathauda  - emit 
+// request -- socket 
+// api -- event
+// req.body = data
