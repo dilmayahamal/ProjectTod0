@@ -4,6 +4,9 @@ import connectToDb from './src/config/db'
 import {Server} from 'socket.io'
 
 
+// .on --- Client to request data in server [line] & .emit -- Client response to data in server [pathaune]
+// todo is event name
+
 function startServer(){
      connectToDb()
     const port = envConfig.port || 4000
@@ -12,12 +15,14 @@ function startServer(){
     })
     const io = new Server(server)
     io.on("connection",(socket)=>{
-       socket.emit("message",{
-        name : "Dilmaya Hamal"
+       socket.on("todo",(data)=>{ 
+       console.log(data)
+       socket.emit("response",{
+        message : "Data received"
        })
+    })
         console.log("Someone connected (client)")
     })
-    
 }
 
 startServer()
